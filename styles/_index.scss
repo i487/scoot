@@ -1,0 +1,495 @@
+.text-right {
+    text-align: right;
+}
+
+
+.align-center {
+    align-items: center;
+}
+
+.align-flex-end {
+    align-items: flex-end;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+    .header {
+        padding: 22px 0;
+
+        .row {
+            align-items: center;
+        }
+    }
+    
+}
+
+.intro-sec {
+    background-image: url('../img/Bitmap.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    padding: 146px 0 105px;
+    position: relative;
+
+    &__arrow {
+        position: absolute;
+        top: 56%;
+        left: 0;
+    }
+
+    &__arrow1 {
+        position: absolute;
+        top: 56%;
+        right: 18%;
+    }
+
+    &__roundpics {
+        position: absolute;
+        bottom: 21%;
+        right: 0;
+    }
+    &__s-arrow {
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        display: none;
+    }
+}
+
+.offer {
+    padding: 160px 0 100px;
+    position: relative;
+
+    &-arrow {
+        position: absolute;
+        top: 36%;
+        left: 0;
+        z-index: -1;
+        transform: translateY(-50%);
+    }
+}
+
+.advantage {
+    padding: 50px 0;
+    position: relative;
+
+    &-wrapper {
+        &__content {
+            padding-bottom: 150px;
+        }
+
+        &__photo {
+            max-width: 445px;
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    &__arrow-1 {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        top: 19%;
+    }
+
+    &__arrow-2 {
+        position: absolute;
+        left: 0;
+        top: 34%;
+        z-index: 1;
+    }
+
+    &__arrow-3 {
+        position: absolute;
+        bottom: 24%;
+        right: 0;
+        z-index: 1;
+    }
+
+    .mask-1 {
+        position: absolute;
+        right: 0;
+        top: 3%;
+    }
+
+    .mask-2 {
+        position: absolute;
+        top: 35%;
+        left: 0;
+        z-index: -1;
+    }
+
+    .mask-3 {
+        position: absolute;
+        bottom: 5%;
+        right: 0;
+        z-index: -1;
+    }
+    
+}
+
+.signup {
+    background: #495567;
+    padding: 102px 0;
+    position: relative;
+
+    &__photo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        color: #FFFFFF;
+
+    }
+}
+
+.footer {
+    background: #333A44;
+    padding: 34px 0;
+}
+
+// responsive 
+
+
+
+@media (max-width: 576px) {
+    
+    .intro-sec {
+        padding-bottom: 200px;
+        &__content {
+            text-align: center;
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &__s-arrow {
+            display: inline;
+            bottom: 5%;
+        }
+    }
+    .offer {
+        &__item {
+            text-align: center;
+            
+            .round-shape {
+                margin: auto;
+            }
+        }
+        &-arrow {
+            display: none;
+        }
+    }
+    .advantage {
+        &-wrapper__photo_order_1 {
+            order: -1;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .arrow-rwd-1 {
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            top: 12%;
+        }
+        .arrow-rwd-2 {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 34%;
+        }
+        .arrow-rwd-3 {
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            bottom: 28%;
+        }
+        &__context {
+            text-align: center;
+            padding-top: 20px;
+
+        }
+        &-btn {
+            margin: auto;
+        }
+    } 
+    .signup {
+        text-align: center;
+        padding: 102px 10px;
+        &__title {
+            font-size: 32px;
+            line-height: 32px;
+        }
+        .store {
+            justify-content: center;
+            padding-top: 30px;
+        }
+    }
+    .footer {
+        text-align: center;
+        .nav {
+            padding-top: 30px;
+            &__list {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+        .social-media {
+            justify-content: center;
+            padding-top: 30px;
+        }
+    }
+}
+@media (min-width: 576px) {
+    .intro-sec {
+        padding-bottom: 200px;
+        &__content {
+            text-align: center;
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &__s-arrow {
+            display: inline;
+            bottom: 5%;
+        }
+        
+    }
+    .offer {
+        &__item {
+            text-align: center;
+            
+            .round-shape {
+                margin: auto;
+            }
+        }
+        
+
+    }
+    .advantage {
+        &-wrapper__photo_order_1 {
+            order: -1;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .arrow-rwd-1 {
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            top: 12%;
+        }
+        .arrow-rwd-2 {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 34%;
+        }
+        .arrow-rwd-3 {
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            bottom: 28%;
+        }
+        &__context {
+            text-align: center;
+            padding-top: 20px;
+
+        }
+        &-btn {
+            margin: auto;
+        }
+    } 
+    .signup {
+        text-align: center;
+        padding: 102px 10px;
+        &__title {
+            font-size: 32px;
+            line-height: 32px;
+        }
+        .store {
+            justify-content: center;
+            padding-top: 30px;
+        }
+    }
+    .footer {
+        text-align: center;
+        .nav {
+            padding-top: 30px;
+            &__list {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+        .social-media {
+            justify-content: center;
+            padding-top: 30px;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .intro-sec {
+        &__tablet-arrow {
+            position: absolute;
+            left: 0;
+            bottom: 4%;
+        }
+        &__roundpics {
+            bottom: 6%;
+        }
+    }
+    .offer {
+        &-arrow {
+            width: 800px;
+            transform: rotate(90deg);
+            left: -41%;
+        }
+        &__item {
+            flex-direction: row;
+            gap: 70px;
+            &-context {
+                text-align: left;
+            }
+        }
+    }
+    .advantage {
+        .mask-1 {
+            top: 2%;
+        }
+        .mask-2 {
+            top: 35%;
+        }
+        .mask-3 {
+            bottom: 16%;
+        }
+        &__arrow-1 {
+            top: 15%;
+        }
+    }
+    .footer {
+        align-items: center;
+        .nav {
+            padding-top: 0;
+            &__list {
+                flex-direction: row;
+                gap: 20px;
+            }
+        }
+        .social-media {
+            padding-top: 0;
+        }
+    }
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .intro-sec {
+        &__content {
+            text-align: left;
+            padding-top: 150px;
+        }
+        &__roundpics {
+            bottom: 28%;
+        }
+        &__arrow {
+            width: 120px;
+        }
+        &__arrow1 {
+            width: 400px;
+        }
+    }
+    .offer {
+        &__item {
+            flex-direction: column;
+            .round-shape {
+                margin: 0;
+            }
+        }
+        &-arrow {
+            left: 0;
+            top: 30%;
+            transform: rotate(0);
+            // width: 970px;
+            width: 780px;
+        }
+    }
+    .advantage {
+        .advantage-wrapper__photo_order_1 {
+            order: initial;
+        }
+        &__context {
+            text-align: left;
+        }
+        .mask-1 {
+            top: 3%;
+        }
+        .mask-3 {
+            bottom: 6%;
+        }
+        &__arrow-1 {
+            top: 24%;
+            width: 630px;
+        }
+    }
+    .signup {
+        text-align: left;
+        &__title {
+            font-size: 48px;
+            line-height: 48px;
+        }
+    }
+    .footer {
+        text-align: left;
+        .social-media {
+            justify-content: flex-end;
+        }
+    }
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .intro-sec {
+        &__arrow {
+            width: initial;
+        }
+        &__arrow1 {
+            width: initial;
+        }
+    }
+    .offer {
+        &-arrow {
+            width: initial;
+        }
+    }
+    .advantage {
+        &__arrow-1 {
+            width: initial;
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+
+}
+
+
+
+
+
+

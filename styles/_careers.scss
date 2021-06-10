@@ -1,0 +1,82 @@
+@media (max-width: 576px) {
+    .profession {
+        flex-direction: column;
+        gap: 15px;
+        &__item {
+            text-align: center;
+        }
+        &__btn {
+            width: 100%;
+        }
+
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .profession {
+        flex-direction: column;
+        gap: 15px;
+        &__item {
+            text-align: center;
+        }
+        &__btn {
+            width: 100%;
+        }
+
+    }
+    .advantage {
+        .career-page-arrow {
+            position: absolute;
+            right: 0;
+            top: 43%;
+            z-index: 1;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .profession {
+        flex-direction: row;
+        justify-content: space-between;
+        &__item {
+            text-align: left;
+        }
+        &__btn {
+            width: auto;
+        }
+
+    }
+    .advantage {
+        .career-page-arrow {
+            position: absolute;
+            right: 0;
+            top: 43%;
+            z-index: 1;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .advantage {
+        .career-page-arrow {
+            position: absolute;
+            right: 0;
+            top: 60%;
+            z-index: 1;
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+
+}

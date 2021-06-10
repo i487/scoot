@@ -1,0 +1,92 @@
+.map {
+    &__photo {
+        max-width: 1110px;
+        width: 100%;
+    }
+    &__rwd-map {
+        max-width: 1110px;
+        width: 100%;
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    &__btn {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: bold;
+        padding: 22px 100px;
+        background: rgba(252, 183, 43, 0.15);
+        border-radius: 2px;
+        border: none;
+        outline: none;
+    }
+}
+.help-section {
+    padding: 30px 0;
+    &__title {
+        font-size: 48px;
+        line-height: 48px;
+        color: #495567;
+    }
+    &__text {
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .help-section {
+        text-align: center;
+        &__text {
+           padding: 30px 0; 
+        }
+        &__btn {
+            text-align: center;
+            margin: auto;
+        }
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .help-section {
+        text-align: center;
+        &__text {
+           padding: 30px 0; 
+        }
+        &__btn {
+            text-align: center;
+            margin: auto;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .help-section {
+        &__text {
+           padding: 0; 
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+
+}

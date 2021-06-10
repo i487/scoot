@@ -1,0 +1,149 @@
+.padding-b {
+    padding-bottom: 20px;
+}
+.intro-sec {
+    position: relative;
+    .about-intro__photo {
+        position: absolute;
+        bottom: 30%;
+        right: 0;
+    }
+}
+
+.advantage {
+    .about-page-arrow1 {
+        position: absolute;
+        top: 28%;
+        right: 0;
+        z-index: 1;
+    }
+    .about-page-arrow2 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 1;
+    }
+    .about-page-mask-2 {
+        position: absolute;
+        top: 50% !important;
+        left: 0;
+    }
+
+}
+
+.our-values {
+    padding: 120px 0;
+    text-align: center;
+    &__title {
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: bold;
+        color: #495567;
+        margin-bottom: 50px;
+
+    }
+}
+
+.faqs {
+    text-align: center;
+    &__title {
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: bold;
+        color: #495567;
+        margin-bottom: 50px;
+    }
+    &__item {
+        
+        &-title {
+            color: #495567;
+            font-size: 40px;
+            line-height: 48px;
+            font-weight: bold;
+        }
+    }
+}
+
+// responsive web design starts here
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .intro-sec {
+        .about-intro__photo {
+            bottom: 46%;
+        }
+    }
+   .advantage {
+       .about-arrow-rwd-2 {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 50%;
+       }
+    }
+    .faqs {
+        &__item-title {
+            padding-bottom: 20px;
+        }
+    } 
+    
+}
+@media (min-width: 576px) {
+    .intro-sec {
+        .about-intro__photo {
+            bottom: 46%;
+        }
+    }
+   .advantage {
+       .about-arrow-rwd-2 {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 50%;
+       }
+    }
+    .faqs {
+        &__item-title {
+            padding-bottom: 20px;
+        }
+    } 
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .advantage {
+        .about-arrow-rwd-2 {
+         position: absolute;
+         z-index: 1;
+         left: 0;
+         top: 50%;
+        }
+        .about-page-arrow1 {
+            top: 23%;
+        }
+     }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .advantage {
+        .about-page-arrow1 {
+            top: 34%;
+        }
+    }
+    .intro-sec {
+        .about-intro__photo {
+            bottom: 34%;
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+    
+}
